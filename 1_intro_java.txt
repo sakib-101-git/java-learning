@@ -1,0 +1,8 @@
+WORA - Write Once, Run Anywhere
+
+Java solves:
+	- Portability (through converting source code to bytecode using JVM (java virtual machine)
+	- Simple (removes the pointers, multiple inheritence memory allocation-deallocation)
+	- Security (uses sandbox model that seperates JVM internals with the external softwares in the system
+
+Microsoft tried to make C++ platform independent and they invented C# that converts source code to bytecode

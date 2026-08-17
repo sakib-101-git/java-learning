@@ -1,0 +1,22 @@
+(JDK(JRE(JVM)))
+
+JVM Java Virtual Machine
+- converts bytecode to machine code making the code platform independent with interpreter & JIT Compiler. JIT (Just In Time) Compiler compiles frequent code and Interpreter converts less important or frequent bytecode to machine code. 
+- Secure for using Sand-box model. 
+- Garbage Collection
+
+
+JRE Java Runtime Environment
+- JVM + Class Libraries (import libraries)
+
+JDK Java Development Kit
+- JRE + Compiler, Debugger
+- Compiler to convert source code to bytecode
+- Debugger for testing
+- Java Docs
+
+
+Extras:
+JSE - java standard edition - core java
+JEE - java enterprise edition - transactionals, also known as JakartaEE
+JME - java micro edition - lightweight - early java (obsolete)

@@ -1,0 +1,27 @@
+Implicit and Explicit conversion
+
+Implicit - Destination data type should be wider than source datatype
+-> short to int
+-> int to long
+
+Explicit - the reverse.. converting from bigger data type to shorter data type
+-> int to byte
+-> long to int
+if we mod the number with the range of the smaller data type we get the number that is going to be printed
+int 300 -> byte 44 
+300 % 256(range of byte) = 44
+
+Truncating Conversion - float er decimal point value gula truncate kore int e convert kora
+
+Automatic type promotion -
+byte a = 50;
+byte b = 30;
+byte c = 100;
+
+int i = (a*b)/c; 
+
+goes out of range but java automatically converts the byte to int
+1. byte, short and char values are promoted to int
+2. if one operand is long, the whole expression will become long.
+3. if one operand is float, entire expression will become float. (int to float)
+4. if one operand is double, entire expression will become double. (range)
