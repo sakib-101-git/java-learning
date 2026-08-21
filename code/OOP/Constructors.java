@@ -1,5 +1,7 @@
 
 
+
+
 public class Constructors {
 
     public static void main(String[] args) {
@@ -12,12 +14,15 @@ public class Constructors {
 
         Student s1 = new Student("Sakib", 24, 283, "MCU");
         s1.print();
+        s1.markAttendance();
         
         Student s2 = new Student("Rakib", 25, 300);
         s2.print();
+        s2.markAttendance();
 
         Student s3 = new Student("Akib", 26);
         s3.print();
+        s3.markAttendance();
 
         // Student is user defined data type
         // s1 is reference variable located on memory
