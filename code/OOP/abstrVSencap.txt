@@ -1,0 +1,7 @@
+Abstraction
+-> data/implementation hiding, not providing security
+-> 
+
+Encapsulation
+-> data and methods are together encapsulated
+-> providing data security via access modifiers

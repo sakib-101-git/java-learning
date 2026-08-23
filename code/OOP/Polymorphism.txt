@@ -1,0 +1,17 @@
+
+    Polymorphism -> Poly means 'many', morphism means 'forms' -> many forms
+    -> same objects behave/responds differently on same command if one parameter is changed
+    1. *** Method Overloading -> compile-time polymorphism 
+    // if i write same methods multiple time and change the parameters there, it will be converted
+    during compile time, and changing or adding functionalities on the same method is called 
+    method overloading. thus, that is one type of polymorphism cause same class has many forms through 
+    different methods 
+
+    2. *** Method Overriding -> run-time polymorphism
+    // if i write an abstract class and use annotations @Override (On the car example), this will decide
+    on runtime which class to run or provoke. thus this is run-time polymorphism and the approach is method
+    overriding. we have different methods coming from the same interface, not changing the same method and adding
+    functionalities. thats the main difference
+
+    // if we change the same method multiple times -> method overloading
+    // if we implement different methods from same class/interface -> method overriding
