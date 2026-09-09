@@ -8,24 +8,24 @@
 // enum -> Enumerations (Enumerated type)
 // enum -> predefined set of constants
 
-public class Enums {
-    public static void main(String[] args) {
+// public class Enums {
+//     public static void main(String[] args) {
 
 
-        PaymentStatus status = PaymentStatus.PENDING;
-        //PaymentStatus status = 100; this produces error cause enum is typesafe
+//         PaymentStatus status = PaymentStatus.PENDING;
+//         //PaymentStatus status = 100; this produces error cause enum is typesafe
 
-        System.out.println(status.name());
-    }
+//         System.out.println(status.name());
+//     }
 
-}
+// }
 
 
-enum PaymentStatus {
-    SUCCESS,
-    FAILED,
-    PENDING;
-}
+// enum PaymentStatus {
+//     SUCCESS,
+//     FAILED,
+//     PENDING;
+// }
 
 /*
     enum Direction {
@@ -59,5 +59,57 @@ enum PaymentStatus {
     -> each constants are static and final
     -> enum are objects of class direction
 
+
+*/
+
+public class Enums {
+    public static void main(String[] args) {
+        Direction d = Direction.EAST;
+        System.out.println(d.getDegree());
+        
+        Direction[] d1 = Direction.values();
+        
+        for(Direction directions : d1) {
+            System.out.println(directions.name());
+        }
+
+        Direction d2 = Direction.valueOf("SOUTH");
+        System.out.println(d2.name()); // if you dont care about overriding
+        System.out.println(d2.toString()); // if you have to override
+        System.out.println(d.ordinal()); // serial of the value
+    }
+}
+
+enum Direction {
+    NORTH(0),
+    SOUTH(180),
+    EAST(90),
+    WEST(270);
+
+    public int degree;
+
+    Direction(int degree) {
+        this.degree = degree;
+    }
+
+    public int getDegree() {
+        return this.degree;
+    }
+
+    @Override 
+    public String toString() {
+        return this.name() + " Dhooooop";
+    }
+}
+
+/*
+    enum existing functionalities
+    -> values()
+    -> valueOf(String)
+    -> name()
+    -> ordinal()
+
+    values and valueOf methods are compiler generated methods
+    name and ordinals come from enum class
 
 */
