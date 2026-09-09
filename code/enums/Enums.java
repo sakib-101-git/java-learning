@@ -112,4 +112,10 @@ enum Direction {
     values and valueOf methods are compiler generated methods
     name and ordinals come from enum class
 
+
+    where is enum used?
+    -> day of the week
+    -> payment status
+    -> order status
+    -> logs (INFO, ERROR, DEBUG)
 */
