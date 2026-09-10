@@ -41,7 +41,40 @@ List Properties
         -> insert
         -> remove
 
-    
+    listIterator(int index) // iterate from specific index
+
+    of() // List<Integer> l = list.of(1,2,3);
+
+    copyOf() // same copy of another list
 
 
 */
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class List1 {
+    public static void main(String[] args) {
+        List<Integer> l = new ArrayList<>();
+        l.add(1);
+        l.add(2);
+        l.add(3);
+
+        System.out.println(l.get(1));
+        l.set(1, 5);
+        System.out.println(l);
+
+        l.addAll(0, List.of(9,8,7));
+        System.out.println(l);
+
+        l.remove(0);
+        System.out.println(l);
+
+        ListIterator<Integer> iterator = l.listIterator();
+
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+    }
+}
