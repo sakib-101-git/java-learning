@@ -48,6 +48,39 @@ List Properties
     copyOf() // same copy of another list
 
 
+    ArrayList dynamic increase
+    new capacity = old capacity + (old capacity/2)
+
+    ArrayList offers
+    -> Random access
+    -> Cache friendly
+    -> simple structure
+
+    constructor
+
+    List<Integer> list = new ArrayList<>();
+    List<Integer> list = new ArrayList<>(10); // specifying size
+
+    ArrayList methods
+    -> ensureCapacity();
+    list.ensureCapacity(100); // confirming the minimum array size
+    -> list.trimToSize(); // unnecessary positions get trimmed
+
+
+    LinkedList is more optimized as it can move forward and backward both
+    
+    Vector, Stack are legacy classes
+    Vector -> Dynamic Array
+    HashTable -> HashMap
+    Stack -> Stack implementation using Array
+    Vector and Stack are Thread Safe -> Overhead -> Slow
+
+    List Queue Set
+    ArrayDeque -> Implements Queue and Stack together
+
+    
+
+
 */
 
 import java.util.ArrayList;
@@ -77,4 +110,5 @@ public class List1 {
             System.out.println(iterator.next());
         }
     }
+
 }
