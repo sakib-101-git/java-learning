@@ -1,7 +1,7 @@
 public class Nesting {
     public static void main(String[] args) {
 
-        Outer.Inner inner = new Outer.Inner();
+        Outer.Inner inner = new Outer.Inner(new Outer());
         inner.fun();
 
     }
